@@ -1,0 +1,17 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: insert-data-type-document
+      author: mariana
+      changes:
+        - sql:
+            splitStatements: true
+            sql: |
+              CALL insert_type_document('Cédula de Ciudadanía', 'CC');
+              CALL insert_type_document('Tarjeta de Identidad', 'TI');
+              CALL insert_type_document('Pasaporte', 'PAS');
+              CALL insert_type_document('Cédula de Extranjería', 'CE');
+      rollback:
+        - sqlFile:
+            path: ../06_rollback/delete_type_document.sql
+            relativeToChangelogFile: true

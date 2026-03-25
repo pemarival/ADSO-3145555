@@ -1,0 +1,13 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: create-type-document-table
+      author: mariana
+      changes:
+        - sqlFile:
+            path: type_document.sql
+            relativeToChangelogFile: true
+      rollback:
+        - sqlFile:
+            path: ../06_rollback/type_document.sql
+            relativeToChangelogFile: true

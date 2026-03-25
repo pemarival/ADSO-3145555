@@ -1,0 +1,21 @@
+databaseChangeLog:
+
+  - include:
+      file: 01_tablas/changelog.yaml
+
+  - include:
+      file: 02_vistas/changelog.yaml
+
+  - include:
+      file: 03_procedure/changelog.yaml
+
+  - include:
+      file: 04_triggers/changelog.yaml
+
+  - include:
+      file: 05_function/changelog.yaml
+
+  - include:
+     file: 07_datos/changelog.yaml
+     relativeToChangelogFile: true     
+    

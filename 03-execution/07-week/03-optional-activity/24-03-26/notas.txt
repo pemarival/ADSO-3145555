@@ -1,0 +1,8 @@
+Levantar postgres
+1. docker compose up -d
+
+Ejecutar liquibase
+2. liquibase update
+
+Entrar a verificar
+docker exec -it liquibase_postgres psql -U postgres -d liquibase_db

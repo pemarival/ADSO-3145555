@@ -1,0 +1,15 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: create-procedure-insert-type-document
+      author: mariana
+      changes:
+        - sqlFile:
+            path: sp_insert_type_document.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            stripComments: false
+      rollback:
+        - sqlFile:
+            path: ../06_rollback/sp_insert_type_document.sql
+            relativeToChangelogFile: true      

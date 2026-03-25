@@ -1,0 +1,15 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: create-function-count-type-document
+      author: mariana
+      changes:
+        - sqlFile:
+            path: fn_count_type_document.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+            stripComments: falseyup
+      rollback:
+        - sqlFile:
+            path: ../06_rollback/fn_count_type_document.sql
+            relativeToChangelogFile: true       
