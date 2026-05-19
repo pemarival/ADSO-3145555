@@ -1,3 +1,7 @@
-### hotel-system
+### hotel-system-bd
 
-https://github.com/pemarival/12-week_05-05-26_sistema-hotelero.git
+https://github.com/hotel-system-2026/bd-hotel-system
+
+### hotel-system-doc
+
+https://github.com/hotel-system-2026/documentation-hotel-system.git
